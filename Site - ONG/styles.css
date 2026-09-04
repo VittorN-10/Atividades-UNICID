@@ -1,0 +1,316 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    background-color: #176b87;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+
+/* =========================
+   MENU DE NAVEGAÇÃO
+========================= */
+
+nav {
+    background-color: #064663;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #176b87;
+}
+
+
+/* =========================
+   CONTEÚDO PRINCIPAL
+========================= */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #064663;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #176b87;
+    padding-bottom: 8px;
+}
+
+section p {
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   IMAGENS
+========================= */
+
+section img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 20px auto 0;
+    border-radius: 10px;
+}
+
+
+/* =========================
+   ENDEREÇO / CONTATO
+========================= */
+
+address {
+    font-style: normal;
+    background-color: #f0f6f8;
+    padding: 20px;
+    border-left: 5px solid #176b87;
+    border-radius: 5px;
+}
+
+address p {
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   ARTIGOS - PROJETOS
+========================= */
+
+article {
+    background-color: #f8fafb;
+    border-left: 5px solid #176b87;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+article h3 {
+    color: #176b87;
+    margin-bottom: 8px;
+}
+
+article p {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+    color: #176b87;
+}
+
+main a {
+    font-weight: bold;
+}
+
+main a:hover {
+    color: #064663;
+}
+
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+form {
+    width: 100%;
+}
+
+fieldset {
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    background-color: white;
+}
+
+legend {
+    color: #064663;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #b8c4ca;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #176b87;
+    box-shadow: 0 0 0 2px rgba(23, 107, 135, 0.15);
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* =========================
+   CHECKBOX
+========================= */
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+label:has(input[type="checkbox"]) {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+button {
+    background-color: #176b87;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #064663;
+}
+
+
+/* =========================
+   VALIDAÇÃO HTML5
+========================= */
+
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: #8fb9a8;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border-color: #d9534f;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background-color: #064663;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    section,
+    fieldset {
+        padding: 18px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
