@@ -35,7 +35,7 @@
             da ONG Esperança e Ação.
         </p>
 
-        <form>
+        <form onsubmit="mostrarAlerta(event)">
 
             <!-- DADOS PESSOAIS -->
             <fieldset>
@@ -178,6 +178,16 @@
         </p>
 
     </footer>
+
+    <script>
+        function mostrarAlerta(event) {
+            event.preventDefault();
+
+            alert("Cadastro realizado com sucesso! Obrigado por se voluntariar para a ONG Esperança e Ação.");
+
+            event.target.reset();
+        }
+    </script>
 </body>
 
 </html>

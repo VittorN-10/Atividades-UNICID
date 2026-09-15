@@ -99,6 +99,73 @@ section p {
     margin-bottom: 12px;
 }
 
+/* =========================
+   PÁGINA DE CADASTRO
+========================= */
+
+main>h2,
+main>p,
+main>form {
+    grid-column: span 12;
+}
+
+main>h2 {
+    color: #064663;
+    margin-bottom: 5px;
+}
+
+main>p {
+    margin-bottom: 0;
+}
+
+form {
+    width: 100%;
+}
+
+
+/* =========================
+   MENU DROPDOWN
+========================= */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-link {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    background-color: #064663;
+    border-radius: 0 0 8px 8px;
+    padding: 8px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: left;
+}
+
+.dropdown-menu a {
+    display: block;
+    margin: 0;
+    padding: 10px 16px;
+    color: white;
+    white-space: nowrap;
+    border-radius: 0;
+}
+
+.dropdown-menu a:hover {
+    background-color: #176b87;
+}
+
+/* Mostra o dropdown ao passar o mouse */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 
 /* =========================
    IMAGENS
@@ -341,6 +408,23 @@ footer p {
 
     button {
         width: 100%;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        text-align: center;
+        box-shadow: none;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+
+    .dropdown-menu a {
+        padding: 8px;
     }
 }
 

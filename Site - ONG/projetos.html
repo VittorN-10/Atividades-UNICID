@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,20 @@
         <!-- MENU DE NAVEGAÇÃO -->
         <nav>
             <a href="index.html">Início</a>
-            <a href="projetos.html">Projetos</a>
+
+            <div class="dropdown">
+                <a href="projetos.html" class="dropdown-link">
+                    Projetos ▾
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="#projetos">Apresentação</a>
+                    <a href="#campanhas">Campanhas de Doação</a>
+                    <a href="#voluntariado">Ações de Voluntariado</a>
+                    <a href="#participar">Como Participar</a>
+                </div>
+            </div>
+
             <a href="cadastro.html">Seja Voluntário</a>
         </nav>
     </header>
@@ -138,4 +152,5 @@
         </p>
     </footer>
 </body>
+
 </html>
