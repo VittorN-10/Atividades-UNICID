@@ -1,3 +1,4 @@
+// Módulo responsável pelo armazenamento dos dados no navegador
 export function salvarDados(chave, dados) {
     localStorage.setItem(chave, JSON.stringify(dados));
 }
