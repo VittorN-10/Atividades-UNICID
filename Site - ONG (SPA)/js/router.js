@@ -1,34 +1,41 @@
-function renderizar(rota = window.location.pathname) {
-    const app = document.querySelector("#app");
+import { configurarFormulario } from "./formulario.js";
 
-    const pagina = rotas[rota] || renderInicio;
+export function configurarRouter(rotas) {
 
-    app.innerHTML = pagina();
+    function renderizar(rota = window.location.pathname) {
+        const app = document.querySelector("#app");
 
-    configurarFormulario();
+        const pagina = rotas[rota] || rotas["/"];
 
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-}
+        app.innerHTML = pagina();
 
-document.addEventListener("click", function (event) {
-    const link = event.target.closest("[data-link]");
+        configurarFormulario();
 
-    if (!link) {
-        return;
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
     }
 
-    event.preventDefault();
+    document.addEventListener("click", function (event) {
+        const link = event.target.closest("[data-link]");
 
-    const rota = link.getAttribute("href");
+        if (!link) {
+            return;
+        }
 
-    history.pushState({}, "", rota);
+        event.preventDefault();
 
-    renderizar(rota);
-});
+        const rota = link.getAttribute("href");
 
-window.addEventListener("popstate", function () {
+        history.pushState({}, "", rota);
+
+        renderizar(rota);
+    });
+
+    window.addEventListener("popstate", function () {
+        renderizar();
+    });
+
     renderizar();
-});
+}

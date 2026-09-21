@@ -1,10 +1,5 @@
-import {
-    renderInicio,
-    renderProjetos,
-    renderCadastro
-} from "./paginas.js";
-
-import { renderizar } from "./router.js";
+import { renderInicio, renderProjetos, renderCadastro } from "./paginas.js";
+import { configurarRouter } from "./router.js";
 
 const rotas = {
     "/": renderInicio,
@@ -12,5 +7,4 @@ const rotas = {
     "/cadastro": renderCadastro
 };
 
-renderizar();
-        renderizar();
+configurarRouter(rotas);

@@ -1,4 +1,6 @@
-function configurarFormulario() {
+import { salvarDados, carregarDados } from "./storage.js";
+
+export function configurarFormulario() {
     const formulario = document.querySelector("#form-voluntario");
 
     if (!formulario) {
