@@ -1,0 +1,33 @@
+# Site - ONG
+
+Projeto desenvolvido como atividade acadêmica da UNICID, com o objetivo de criar um site para uma organização não governamental (ONG), utilizando conceitos de desenvolvimento Front-End e organização de uma aplicação SPA.
+
+## Sobre o projeto
+
+O projeto apresenta uma interface para uma ONG, com páginas e funcionalidades organizadas de forma modular.
+
+A aplicação foi desenvolvida utilizando HTML, CSS e JavaScript, com a estrutura JavaScript separada em módulos para facilitar a organização e manutenção do código.
+
+## Funcionalidades
+
+- Página inicial da ONG;
+- Página de projetos;
+- Formulário de cadastro/inscrição;
+- Navegação entre páginas utilizando roteamento;
+- Armazenamento de dados no navegador;
+- Layout responsivo.
+
+## Estrutura do projeto
+
+```text
+Site - ONG (SPA)/
+│
+├── index.html
+├── styles.css
+│
+└── js/
+    ├── app.js
+    ├── paginas.js
+    ├── router.js
+    ├── formulario.js
+    └── storage.js
