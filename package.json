@@ -1,0 +1,13 @@
+{
+  "name": "site-ong-spa",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido como atividade acadêmica da UNICID, com o objetivo de criar um site para uma organização não governamental (ONG), utilizando conceitos de desenvolvimento Front-End e organização de uma aplicação SPA.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.3.1"
+  }
+}
